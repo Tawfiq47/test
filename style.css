@@ -1,0 +1,391 @@
+:root {
+    --main-color: #fa9805;
+    --black: #244361;
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none !important;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-padding-top: 6rem;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+section:nth-child(odd) {
+    background: #f8f8fe;
+}
+
+.heading {
+    font-size: 3rem;
+    color: var(--black);
+    text-align: center;
+    padding: 0 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.heading span {
+    color: var(--main-color);
+}
+
+.link-btn {
+    background: var(--main-color);
+    color: #fff;
+    padding: 0.5rem 2.5rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    border-radius: 5rem;
+    display: inline-block;
+}
+
+.link-btn:hover {
+    background: var(--black);
+    color: #fff;
+}
+
+header {
+    box-shadow: var(--box-shadow);
+    background: #fff;
+}
+
+header .logo {
+    font-size: 2rem;
+    color: var(--black);
+}
+
+header .logo span {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+header .nav a {
+    font-size: 1.7rem;
+    margin-left: 0.3rem;
+    border-radius: 5rem;
+    color: var(--black);
+    padding: 0.5rem 1.5rem;
+}
+
+header .nav .active,
+header .nav a:hover {
+    background: var(--main-color);
+    box-shadow: var(--box-shadow);
+    color: #fff;
+}
+
+#menu-bar {
+    font-size: 2.5rem;
+    color: var(--black);
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+
+/* ====== home section */
+
+.home {
+    min-height: 100vh;
+    background: url(/images/home-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content span {
+    color: var(--main-color);
+    font-size: 2rem;
+}
+
+.home .content h3 {
+    font-size: 5rem;
+    color: var(--black);
+    font-weight: bolder;
+}
+
+
+/* ====== home section */
+
+
+/* ===========about===== */
+
+.about .content h3 {
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.about .content p {
+    font-size: 1.4rem;
+    color: #777;
+}
+
+
+/* ===========about===== */
+
+
+/* ========prevent =========== */
+
+.prevent .box {
+    flex: 1 1 30rem;
+    background: #f8f8fe;
+    text-align: center;
+    border-radius: .5rem;
+}
+
+.prevent .box img {
+    margin-bottom: 1rem;
+    height: 7rem;
+}
+
+.prevent .box h3 {
+    color: var(--black);
+    font-size: 2rem;
+}
+
+.prevent .box p {
+    color: var(--black);
+    font-size: 1.4rem;
+}
+
+
+/* ========prevent =========== */
+
+
+/* experts================== */
+
+.experts .box {
+    width: 26rem;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    margin: 0.5rem;
+    padding: 1.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.experts .box img {
+    width: 100%;
+    background: #f8f8fe;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+}
+
+.experts .box h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--black);
+    margin: 0.2rem 0;
+}
+
+.experts .box span {
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+.experts .box .share {
+    position: absolute;
+    top: 0.5rem;
+    right: -7rem;
+    transition: .2s linear;
+}
+
+.experts .box:hover .share {
+    right: 1rem;
+}
+
+.experts .box .share a {
+    display: block;
+    color: #fff;
+    background: var(--main-color);
+    height: 3.3rem;
+    width: 3.3rem;
+    line-height: 3.3rem;
+    border-radius: .5rem;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.experts .box .share a:hover {
+    background: var(--black);
+}
+
+
+/* experts================== */
+
+
+/* ==============contact============ */
+
+.contact form {
+    background: #d6cece;
+    padding: 1.5rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+
+.contact form .box,
+.contact form textarea {
+    background: #f8f8fe;
+    padding: 1rem;
+    margin: .5rem 0;
+    border-radius: .5rem;
+    width: 100%;
+    text-transform: none;
+    font-size: 1.7rem;
+    color: var(--black);
+}
+
+.contact form textarea {
+    resize: none;
+    height: 20rem;
+}
+
+.contact .map {
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+}
+
+
+/* ==============contact============ */
+
+
+/* =====blogs======== */
+
+.blogs .box {
+    width: 35rem;
+    /* flex: 1 1 30rem; */
+    border-radius: .5rem;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+}
+
+.blogs .box .image {
+    height: 20rem;
+    width: 100%;
+    background: #f8f8fe;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.blogs .box:hover .image img {
+    transform: scale(1.1);
+    transition: .2s linear;
+}
+
+.blogs .box .content h3 {
+    font-size: 2rem;
+    padding: 0.5rem 0;
+    color: var(--black);
+}
+
+.blogs .box .content .icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    margin: 1rem;
+    padding-bottom: 0;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.blogs .box .content .icons a {
+    font-size: 1.5rem;
+    color: #777;
+}
+
+.blogs .box .content .icons i {
+    padding-right: 0.7rem;
+}
+
+.blogs .box .content .icons a:hover {
+    color: var(--main-color);
+}
+
+
+/* ============= footer======== */
+
+.footer .box {
+    flex: 1 1 25rem;
+}
+
+.footer .box h3 {
+    font-size: 2.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    color: #777;
+}
+
+.footer .box a:hover {
+    color: var(--main-color);
+}
+
+.footer .credit {
+    text-align: center;
+    color: var(--black);
+    font-size: 1.7rem;
+    border-top: 1px solid rgba(0, 0, 0.1);
+    padding-top: 2rem;
+    margin-top: 1rem;
+}
+
+.footer .credit span {
+    color: var(--main-color);
+}
+
+
+/* ============= footer======== */
+
+
+/* =====blogs======== */
+
+
+/* ==============media==== */
+
+@media (max-width: 991px) {
+    .home .content h3 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:768px) {
+    header .nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        border-bottom: .1rem solid rgba(0, 0, 0, .1);
+        transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header .nav.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    header .nav a {
+        display: block;
+        width: 100%;
+        margin: 1rem;
+    }
+    .fa-times {
+        transform: rotate(180deg);
+    }
+}
